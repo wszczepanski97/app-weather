@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="./css/index.css" />
+    <link rel="stylesheet" href="./css/weather-icons.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Weather App</title>
+  </head>
+  <body>
+    <main>
+      <div class="appContainer">
+        <div class="sectionContainer welcomeSection">
+          <div class="welcomeSection__container">
+            <h1 class="welcomeSection__heading">Weather App</h1>
+            <input
+              class="welcomeSection__input"
+              type="text"
+              placeholder="enter a city"
+              onfocus="this.placeholder = ''"
+              onblur="this.placeholder = 'enter a city'"
+              style="display: block;"
+            />
+            <button class="welcomeSection__button">get weather</button>
+          </div>
+        </div>
+        <div class="sectionContainer weatherSection">
+          <h2 class="weatherSection__heading">Austin</h2>
+          <div class="weatherDescriptionContainer">
+            <i class="wi wi-night-sleet weatherDescriptionContainer_image"></i>
+            <span class="weatherDescriptionContainer__span--description"
+              >Description of weather</span
+            >
+            <span class="weatherDescriptionContainer__span--temperature"
+              >63°</span
+            >
+            <h2 class="weatherDescriptionContainer__heading--dayOfWeek">
+              Today
+            </h2>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

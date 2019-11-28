@@ -1,0 +1,120 @@
+:root {
+  --welcome-section-bg-color: #f77462;
+  --welcome-section-font-color: #ffffff;
+  --weather-section-font-color: #65b6bc;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+
+html {
+  /* 1rem = 10px */
+  font-size: 62.5%;
+  font-family: "Montserrat", sans-serif;
+}
+
+.appContainer {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sectionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50vw;
+}
+
+.welcomeSection {
+  background-color: var(--welcome-section-bg-color);
+  color: var(--welcome-section-font-color);
+  justify-content: center;
+}
+.welcomeSection__container {
+  min-height: 35vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.welcomeSection__heading {
+  font-size: 9rem;
+  font-weight: 300;
+  margin-bottom: 2rem;
+}
+
+.welcomeSection__input {
+  height: 2em;
+  width: 90%;
+  border: 2px solid var(--weather-section-font-color);
+  border-radius: 0.5rem;
+  background-color: transparent;
+  font-size: 3.2rem;
+  line-height: 3.2rem;
+  font-weight: 300;
+  color: var(--welcome-section-font-color);
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.welcomeSection__input::placeholder {
+  text-align: center;
+  color: var(--welcome-section-font-color);
+}
+
+.welcomeSection__button {
+  background-color: transparent;
+  border: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: var(--welcome-section-font-color);
+  font-size: 2.8rem;
+}
+
+.weatherSection {
+  background-color: #fff8f7;
+  justify-content: space-around;
+}
+
+.weatherSection__heading {
+  padding: 1rem 0;
+  font-size: 3.2rem;
+  color: var(--weather-section-font-color);
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.weatherDescriptionContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex: 0.9 1 auto;
+}
+
+.weatherDescriptionContainer_image {
+  font-size: 20rem;
+  color: var(--weather-section-font-color);
+  margin: 5rem 0;
+}
+
+.weatherDescriptionContainer__span--description {
+  font-size: 4rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.weatherDescriptionContainer__span--temperature {
+  color: var(--weather-section-font-color);
+  font-size: 10rem;
+  font-weight: 300;
+}
+.weatherDescriptionContainer__heading--dayOfWeek {
+  font-size: 3.2rem;
+  font-weight: 700;
+  margin-top: 20rem;
+}
