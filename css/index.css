@@ -43,13 +43,13 @@ html {
 }
 
 .welcomeSection__heading {
-  font-size: 9rem;
+  font-size: 7.7rem;
   font-weight: 300;
   margin-bottom: 2rem;
 }
 
 .welcomeSection__input {
-  height: 2em;
+  height: 6rem;
   width: 90%;
   border: 2px solid var(--weather-section-font-color);
   border-radius: 0.5rem;
@@ -73,7 +73,7 @@ html {
   text-transform: uppercase;
   font-weight: 700;
   color: var(--welcome-section-font-color);
-  font-size: 2.8rem;
+  font-size: 3.2rem;
 }
 
 .weatherSection {
@@ -117,4 +117,166 @@ html {
   font-size: 3.2rem;
   font-weight: 700;
   margin-top: 20rem;
+}
+
+/* MEDIA QUERY FOR TABLET */
+@media (min-width: 768px) and (max-width: 1024px) {
+  .appContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionContainer {
+    width: auto;
+    height: 50vh;
+  }
+
+  .welcomeSection__heading {
+    font-size: 5.8rem;
+  }
+
+  .welcomeSection__input {
+    height: 5.6rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+
+  .weatherDescriptionContainer {
+    flex: auto;
+    height: 90%;
+  }
+
+  .weatherDescriptionContainer_image {
+    font-size: 12rem;
+    margin-bottom: 2.5rem;
+    margin-top: 0;
+  }
+
+  .weatherDescriptionContainer__span--description {
+    font-size: 2.6rem;
+  }
+
+  .weatherDescriptionContainer__span--temperature {
+    font-size: 6.8rem;
+  }
+  
+  .weatherDescriptionContainer__heading--dayOfWeek {
+    margin-top: 0rem;
+  }
+}
+
+/* MEDIA QUERY FOR Low Resolution Tablets, Mobiles (Landscape)*/
+@media (min-width: 481px) and (max-width: 767px) {
+  
+  .appContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .welcomeSection {
+    width: auto;
+    height: 50vh;
+  }
+
+  .welcomeSection__heading {
+    font-size: 3.5rem;
+  }
+
+  .welcomeSection__input {
+    height: 5.6rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+
+  .weatherSection {
+    width: auto;
+    min-height: 100vh;
+  }
+
+  .weatherDescriptionContainer {
+    flex: auto;
+  }
+
+  .weatherDescriptionContainer_image {
+    font-size: 8rem;
+    margin: 1rem 0;
+  }
+
+  .weatherDescriptionContainer__span--description {
+    font-size: 2.6rem;
+  }
+
+  .weatherDescriptionContainer__span--temperature {
+    font-size: 6.8rem;
+  }
+
+  .weatherDescriptionContainer__heading--dayOfWeek {
+    font-size: 2.5rem;
+    margin-top: 0rem;
+  }
+  
+}
+
+/* MEDIA QUERY FOR MOBILES (Portrait)*/
+@media (min-width: 320px) and (max-width: 480px) {
+  
+  .appContainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .sectionContainer {
+    width: auto;
+  }
+
+  .welcomeSection {
+    justify-content: space-around;
+    height: 45vh;
+  }
+
+  .welcomeSection__container {
+    min-height: 100%;
+  }
+
+  .welcomeSection__heading {
+    font-size: 3.4rem;
+    margin-bottom: 0;
+  }
+
+  .welcomeSection__input {
+    height: 5.6rem;
+    font-size: 2.8rem;
+    line-height: 2.8rem;
+  }
+
+  .welcomeSection__button {
+    font-size: 2.8rem;
+  }
+
+  .weatherSection {
+    height: 55vh;
+  }
+
+  .weatherDescriptionContainer {
+    flex: auto;
+  }
+
+  .weatherDescriptionContainer_image {
+    font-size: 8rem;
+    margin: 1.5rem 0;
+  }
+
+  .weatherDescriptionContainer__span--description {
+    font-size: 2.6rem;
+  }
+
+  .weatherDescriptionContainer__span--temperature {
+    font-size: 6.8rem;
+  }
+
+  .weatherDescriptionContainer__heading--dayOfWeek {
+    font-size: 2.5rem;
+    margin-top: 0rem;
+  }
+
 }
