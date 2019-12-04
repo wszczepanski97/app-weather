@@ -15,7 +15,6 @@ html {
   font-size: 62.5%;
   font-family: "Montserrat", sans-serif;
 }
-
 .appContainer {
   display: flex;
   min-height: 100vh;
@@ -111,6 +110,11 @@ html {
 .weatherDescriptionContainer__span--temperature {
   color: var(--weather-section-font-color);
   font-size: 10rem;
+  font-weight: 300;
+}
+.weatherDescriptionContainer__span--temperatureFahrenheit {
+  color: var(--weather-section-font-color);
+  font-size: 3rem;
   font-weight: 300;
 }
 .weatherDescriptionContainer__heading--dayOfWeek {
