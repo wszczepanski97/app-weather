@@ -11,6 +11,7 @@
       href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/tiny-slider.css">
     <title>Weather App</title>
   </head>
   <body>
@@ -43,14 +44,22 @@
             <span class="weatherDescriptionContainer__span--temperatureFahrenheit"
               >Change to Fahrenheit</span
             >
-            <h2 class="weatherDescriptionContainer__heading--dayOfWeek">
-              Today
-            </h2>
+            <div class="my-slider">
+              <div><h2 class="weatherDescriptionContainer__heading--dayOfWeek">
+              Today</h2>
+              </div>
+              <div>2</div>
+              <div>3</div>
+            </div>
+           <div class="my-controls">
+              <button class="sliderButton prev">Poprzedni dzień</button>
+              <button class="sliderButton next">Następny dzień</button>
+          </div>
           </div>
         </div>
       </div>
     </main>
-    <script src="javascript.js">
-    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script src="index.js"></script>
   </body>
 </html>

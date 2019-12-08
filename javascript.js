@@ -39,6 +39,15 @@ temperatureChanging.addEventListener("click", function () {
 }
 });
 
+var slider = tns({
+    container: '.my-slider',
+    nav: false,
+    controls:false,
+    controlsContainer: document.querySelector('.my-controls'),
+    constrolsContainer:true,
+    prevButton:true,
+    arrowKeys: true
+  });
 
  
 
